@@ -53,3 +53,23 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+.title {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  transform: rotate(270deg);
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 45%;
+  right: 90px;
+  height: 2px;
+  width: 50px;
+  background-color: #7e7e7e;
+}

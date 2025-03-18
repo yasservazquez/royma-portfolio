@@ -133,7 +133,7 @@ nav .social:hover i:not(:hover) {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   nav .social {
     display: none;
   }
