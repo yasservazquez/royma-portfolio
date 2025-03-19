@@ -4,6 +4,10 @@ import homeCSS from "./Home.module.css";
 import heroImg from "../../assets/home_1-slider_01_royma.png";
 // import aboutImg from "../../assets/home_01-1.png";
 import aboutImg from "../../assets/home_1-slider_01_royma.png";
+import GraphicDesign from "../../assets/GraphicDesign.png";
+import PhotoRetouch from "../../assets/PhotoRetouch.png";
+import MotionDesign from "../../assets/MotionDesign.png";
+import UIUXDesign from "../../assets/UIUXDesign.png";
 
 function Home() {
   return (
@@ -99,6 +103,85 @@ function Home() {
             <div className={homeCSS.social_accounts_card}>
               <i className="ri-instagram-line"></i>
               <h2>Instagram</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section>
+        <div className={homeCSS.skills_wrapper}>
+          <div className={homeCSS.skills_header}>
+            <small className="title">My Skills</small>
+            <h2>
+              What My Design <br />
+              Skills Included
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos ut maxime veritatis cumque officia voluptas, in autem
+              neque nisi. Natus doloremque officiis, animi nemo repudiandae
+              eligendi sunt, a ullam excepturi earum atque! Necessitatibus,
+              placeat excepturi.
+            </p>
+            <div className={homeCSS.skills_container}>
+              <div className={homeCSS.skills_lines}>
+                <div className={homeCSS.skills_line}>
+                  <div className={homeCSS.skills_line_progress}>
+                    <p>PhotoShop</p>
+                    <p>80%</p>
+                  </div>
+                  <div className={homeCSS.line}></div>
+                </div>
+                <div className={homeCSS.skills_line}>
+                  <div className={homeCSS.skills_line_progress}>
+                    <p>Illustrator</p>
+                    <p>72%</p>
+                  </div>
+                  <div className={homeCSS.line}></div>
+                </div>
+                <div className={homeCSS.skills_line}>
+                  <div className={homeCSS.skills_line_progress}>
+                    <p>Sketch</p>
+                    <p>68%</p>
+                  </div>
+                  <div className={homeCSS.line}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={homeCSS.skills_cards}>
+            <div className={homeCSS.skills_card}>
+              <img src={UIUXDesign} alt="ui/ux-design-image" />
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                doloribus!
+              </p>
+            </div>
+            <div className={homeCSS.skills_card}>
+              <img src={GraphicDesign} alt="ui/ux-design-image" />
+              <h2>Graphic Design</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                doloribus!
+              </p>
+            </div>
+            <div className={homeCSS.skills_card}>
+              <img src={MotionDesign} alt="ui/ux-design-image" />
+              <h2>Motion Design</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                doloribus!
+              </p>
+            </div>
+            <div className={homeCSS.skills_card}>
+              <img src={PhotoRetouch} alt="ui/ux-design-image" />
+              <h2>Photo Retouch</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                doloribus!
+              </p>
             </div>
           </div>
         </div>
