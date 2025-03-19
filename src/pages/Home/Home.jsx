@@ -9,6 +9,12 @@ import PhotoRetouch from "../../assets/PhotoRetouch.png";
 import MotionDesign from "../../assets/MotionDesign.png";
 import UIUXDesign from "../../assets/UIUXDesign.png";
 
+import portfolio1 from "../../assets/portfolio_01-1140x570.jpg";
+import portfolio2 from "../../assets/portfolio_02-1140x1140.jpg";
+import portfolio3 from "../../assets/portfolio_03-1140x1140.jpg";
+import portfolio4 from "../../assets/portfolio_04-1140x1140.jpg";
+import portfolio5 from "../../assets/portfolio_05-1140x1140.jpg";
+import portfolio6 from "../../assets/portfolio_06-1140x570.jpg";
 function Home() {
   return (
     <div>
@@ -182,6 +188,64 @@ function Home() {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
                 doloribus!
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Project Section */}
+      <section>
+        <div className={homeCSS.project_wrapper}>
+          <small className="title">My Projects</small>
+          <h2>Meet My Projects</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            aut quo repudiandae, architecto nam cum ipsum odit maxime fugiat,
+            nisi, soluta mollitia cupiditate blanditiis autem! Nulla laboriosam
+            explicabo nemo! Tempora obcaecati expedita laudantium saepe in!
+          </p>
+          <div className={homeCSS.project_cards}>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio1} alt="project-image-01" />
+              <div className={homeCSS.project_information}>
+                <h3>Urbun Experience</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio2} alt="project-image-02" />
+              <div className={homeCSS.project_information}>
+                <h3>Graphic Design</h3>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio3} alt="project-image-03" />
+              <div className={homeCSS.project_information}>
+                <h3>Motion Design</h3>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio4} alt="project-image-04" />
+              <div className={homeCSS.project_information}>
+                <h3>Illustration Design</h3>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio5} alt="project-image-05" />
+              <div className={homeCSS.project_information}>
+                <h3>Graphic Design</h3>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div className={homeCSS.project_card}>
+              <img src={portfolio6} alt="project-image-06" />
+              <div className={homeCSS.project_information}>
+                <h3>Illustration Design</h3>
+                <p>Web Design</p>
+              </div>
             </div>
           </div>
         </div>
