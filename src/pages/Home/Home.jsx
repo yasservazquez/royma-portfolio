@@ -51,7 +51,7 @@ function Home() {
               Email: <span>designroym@gmail.com</span>
             </p>
             <p>
-              Behance: <span>behance.net</span>
+              Behance: <span>www.behance.net/roymacastillo</span>
             </p>
           </div>
           <div className={homeCSS.header_btns}>
@@ -352,6 +352,31 @@ function Home() {
               </Swiper>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section>
+        <div className={homeCSS.contact_wrapper}>
+          <h2>Get In Touch</h2>
+          <div className={homeCSS.contact_cards}>
+            <div className={homeCSS.contact_card}>
+              <i className="ri-phone-line"></i>
+              <h5>Call Us</h5>
+              <p>123-456-7890</p>
+            </div>
+            <div className={homeCSS.contact_card}>
+              <i className="ri-mail-line"></i>
+              <h5>Mail Us</h5>
+              <p>royma@gmail.com</p>
+            </div>
+            <div className={homeCSS.contact_card}>
+              <i className="ri-behance-line"></i>
+              <h5>Behance Us</h5>
+              <p>behance.net/roymacastillo</p>
+            </div>
+          </div>
+          <button>Hire Me</button>
         </div>
       </section>
     </div>

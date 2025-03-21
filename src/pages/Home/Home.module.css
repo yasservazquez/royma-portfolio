@@ -516,6 +516,78 @@
   width: 100% !important;
 }
 
+/* Contact Section */
+.contact_wrapper {
+  width: 70%;
+  margin: 0 auto;
+  height: 500px;
+  background-color: #1e1e1e;
+  padding: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+  color: #ddd;
+  z-index: 1;
+  position: relative;
+}
+
+.contact_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../../assets/footer_home-1_bg.png);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  border-radius: 12px;
+}
+
+.contact_wrapper h2 {
+  font-size: 42px;
+}
+
+.contact_wrapper .contact_cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact_wrapper .contact_cards .contact_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact_wrapper .contact_cards .contact_card i {
+  font-size: 22px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e1e1e;
+  border-radius: 50%;
+}
+
+.contact_wrapper .contact_cards .contact_card h5 {
+  font-size: 30px;
+}
+
+.contact_wrapper button:hover {
+  border: 1px solid var(--primary-color);
+}
+
 /* Responsive Media Queries */
 @media screen and (max-width: 1600px) {
   .Header_wrapper::after {
@@ -591,6 +663,10 @@
 
   .testimonials_container .testimonials_info p {
     font-size: 16px;
+  }
+
+  .contact_wrapper {
+    width: 80%;
   }
 }
 
@@ -731,6 +807,10 @@
   .testimonials_container .testimonials_image {
     width: 100%;
   }
+
+  .contact_wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -774,6 +854,10 @@
 
   .brands_wrapper p {
     width: 90%;
+  }
+
+  .contact_wrapper .contact_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -828,5 +912,13 @@
 
   .testimonials_container .testimonials_info {
     padding: 20px;
+  }
+
+  .contact_wrapper {
+    height: 650px;
+  }
+
+  .contact_wrapper .contact_cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
