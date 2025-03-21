@@ -15,6 +15,14 @@ import portfolio3 from "../../assets/portfolio_03-1140x1140.jpg";
 import portfolio4 from "../../assets/portfolio_04-1140x1140.jpg";
 import portfolio5 from "../../assets/portfolio_05-1140x1140.jpg";
 import portfolio6 from "../../assets/portfolio_06-1140x570.jpg";
+
+import brandsLogo01 from "../../assets/partners-2-hover.jpg";
+import brandsLogo02 from "../../assets/partners-3-hover.jpg";
+import brandsLogo03 from "../../assets/partners-4-hover.jpg";
+import brandsLogo04 from "../../assets/partners-5-hover.jpg";
+import brandsLogo05 from "../../assets/partners-6-hover.jpg";
+import brandsLogo06 from "../../assets/partners-7-hover.jpg";
+
 function Home() {
   return (
     <div>
@@ -246,6 +254,39 @@ function Home() {
                 <h3>Illustration Design</h3>
                 <p>Web Design</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands Section */}
+      <section>
+        <div className={homeCSS.brands_wrapper}>
+          <h2>Brands That I Have Worked With</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            commodi laudantium, nemo animi accusantium sint, alias adipisci
+            optio similique inventore voluptas? Mollitia cumque eveniet
+            accusamus.
+          </p>
+          <div className={homeCSS.brands}>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo01} alt="brands-logoes" />
+            </div>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo02} alt="brands-logoes" />
+            </div>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo03} alt="brands-logoes" />
+            </div>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo04} alt="brands-logoes" />
+            </div>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo05} alt="brands-logoes" />
+            </div>
+            <div className={homeCSS.brand}>
+              <img src={brandsLogo06} alt="brands-logoes" />
             </div>
           </div>
         </div>
