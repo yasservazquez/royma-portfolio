@@ -460,6 +460,62 @@
   filter: invert(100%);
 }
 
+/* Testimonials Section */
+
+.testimonials_wrapper {
+  width: 100%;
+}
+
+.testimonials_container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.testimonials_container .testimonials_image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials_container .testimonials_image img {
+  width: 80%;
+}
+
+.testimonials_container .testimonials_info {
+  width: 50%;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(131, 131, 131, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.testimonials_container .testimonials_info p {
+  font-size: 18px;
+}
+
+.testimonials_profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.testimonials_profile h5 {
+  font-size: 30px;
+}
+
+.swiper {
+  width: 100% !important;
+}
+
 /* Responsive Media Queries */
 @media screen and (max-width: 1600px) {
   .Header_wrapper::after {
@@ -483,6 +539,10 @@
 
   .services_cards .service_card {
     padding: 0 22px;
+  }
+
+  .testimonials_container .testimonials_image img {
+    width: 100%;
   }
 }
 
@@ -527,6 +587,10 @@
 
   .skills_wrapper .skills_header h2 {
     font-size: 35px;
+  }
+
+  .testimonials_container .testimonials_info p {
+    font-size: 16px;
   }
 }
 
@@ -580,6 +644,15 @@
 
   .brands_wrapper .brands {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials_container .testimonials_info {
+    padding: 30px;
+    margin-left: -150px;
+  }
+
+  .testimonials_profile {
+    margin-top: 20px;
   }
 }
 
@@ -641,6 +714,22 @@
 
   .about_wrapper .about_header {
     width: 70%;
+  }
+
+  .testimonials_container {
+    flex-direction: column;
+  }
+
+  .testimonials_container .testimonials_info {
+    width: 100% !important;
+    padding: 50px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .testimonials_container .testimonials_image {
+    width: 100%;
   }
 }
 
@@ -735,5 +824,9 @@
   .project_wrapper .project_cards .project_card:nth-of-type(6) {
     grid-column-start: auto;
     grid-column-end: auto;
+  }
+
+  .testimonials_container .testimonials_info {
+    padding: 20px;
   }
 }

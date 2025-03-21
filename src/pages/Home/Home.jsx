@@ -23,6 +23,12 @@ import brandsLogo04 from "../../assets/partners-5-hover.jpg";
 import brandsLogo05 from "../../assets/partners-6-hover.jpg";
 import brandsLogo06 from "../../assets/partners-7-hover.jpg";
 
+import testimonialImage01 from "../../assets/testimonials_img-01.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+
 function Home() {
   return (
     <div>
@@ -287,6 +293,63 @@ function Home() {
             </div>
             <div className={homeCSS.brand}>
               <img src={brandsLogo06} alt="brands-logoes" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section>
+        <div className={homeCSS.testimonials_wrapper}>
+          <h2>What My Clients Say About Me</h2>
+          <div className={homeCSS.testimonials_container}>
+            <div className={homeCSS.testimonials_image}>
+              <img src={testimonialImage01} alt="" />
+            </div>
+            <div className={homeCSS.testimonials_info}>
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                autoplay={{ delay: 2500 }}
+                loop={true}
+                modules={[Autoplay]}
+                className={homeCSS.swiper}
+              >
+                <SwiperSlide>
+                  <div className={homeCSS.testimonials}>
+                    <p>
+                      " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, assumenda veniam recusandae nemo qui delectus
+                      corporis ullam ab consectetur nobis ducimus! Libero
+                      distinctio quas eius aliquid nobis veritatis cum esse
+                      optio cupiditate, alias pariatur. Nulla quas ducimus odit
+                      recusandae fugiat accusamus similique laborum doloremque
+                      exercitationem! Amet quae atque deserunt exercitationem!"
+                    </p>
+                    <div className={homeCSS.testimonials_profile}>
+                      <h5>Johan Doe</h5>
+                      <p>CEO at ABC</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={homeCSS.testimonials}>
+                    <p>
+                      " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, assumenda veniam recusandae nemo qui delectus
+                      corporis ullam ab consectetur nobis ducimus! Libero
+                      distinctio quas eius aliquid nobis veritatis cum esse
+                      optio cupiditate, alias pariatur. Nulla quas ducimus odit
+                      recusandae fugiat accusamus similique laborum doloremque
+                      exercitationem! Amet quae atque deserunt exercitationem!"
+                    </p>
+                    <div className={homeCSS.testimonials_profile}>
+                      <h5>Animash</h5>
+                      <p>CEO at XYZ</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
