@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import aboutCSS from "./About.module.css";
+import aboutImg from "../../assets/about_01-1.png";
 
 function About() {
   return (
@@ -58,6 +59,39 @@ function About() {
               </p>
               <i className="ri-arrow-right-s-line"></i>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us */}
+      <section className={aboutCSS.about}>
+        <div className={aboutCSS.about_container}>
+          <div className={aboutCSS.about_info}>
+            <small className="title">About Me</small>
+            <h2>
+              Digital Web Products <br /> for Amazing Clients
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              molestias consectetur sapiente, tempore accusantium dignissimos
+              quae cumque non deleniti tenetur officiis voluptatibus impedit
+              voluptas eveniet corporis maxime ut minus id velit obcaecati amet
+              possimus rerum.
+            </p>
+            <div className={aboutCSS.achievement}>
+              <p>
+                123+ <span>Happy Clients</span>
+              </p>
+              <p>
+                230+ <span>Incredible Projects</span>
+              </p>
+              <p>
+                18+ <span>Awards Winning</span>
+              </p>
+            </div>
+          </div>
+          <div className={aboutCSS.about_image}>
+            <img src={aboutImg} alt="about-image" />
           </div>
         </div>
       </section>
